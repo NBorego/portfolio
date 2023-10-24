@@ -1,0 +1,21 @@
+.hello-social-media {
+    display: flex;
+} 
+
+.social-media {
+    display: flex;
+    gap: clamp(0.5rem, 0.2857rem + 1.1429vw, 1rem);
+}
+
+.social-media-links {
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+
+.social-media-links img {
+    width: clamp(1.5rem, -1.1429rem + 11.4286vw, 3rem);
+}
+
+.social-media-links:hover {
+    transform: scale(125%);
+}

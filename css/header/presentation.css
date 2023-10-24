@@ -1,0 +1,46 @@
+.presentation {
+    display: flex;
+    flex-direction: column;
+    line-height: clamp(2.5rem, -0.2857rem + 14.8571vw, 9rem);
+    overflow: hidden;
+}
+
+.presentation .dev-strong {
+    position: relative;
+
+    color: var(--neon-blue);
+    font-size: clamp(2rem, -0.5714rem + 13.7143vw, 8rem);
+}
+
+.presentation .dev-strong::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: var(--white);
+    border-left: .3rem solid var(--neon-blue);
+    animation: animate 5s steps(12) infinite;
+}
+
+@keyframes animate {
+    40%, 60% {
+        left: calc(100% + 4px);
+    }
+    100% {
+        left: 0%;
+    }
+}
+
+.presentation .hello-span {
+    font-size: clamp(1rem, -1.1429rem + 11.4286vw, 3rem);
+}
+
+.presentation .hello-span, .dev-strong {
+    font-weight: 400;
+}
+
+.hello-span {
+    margin-right: clamp(0.5rem, 0.2857rem + 1.1429vw, 1rem);
+}
