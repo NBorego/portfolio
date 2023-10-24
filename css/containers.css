@@ -3,7 +3,6 @@ header {
     position: relative;
 }
 
-.about {
-    flex-direction: column;
-    gap: 1rem;
+.about{
+    gap: clamp(1rem, 0.3571rem + 3.4286vw, 2.5rem);
 }

@@ -1,7 +1,19 @@
-.about h1 {
-
+.about h2 {
+    font-size: clamp(1rem, 0.1429rem + 4.5714vw, 3rem);
+    font-weight: normal;
 }
 
 .about ul{
+    width: 90%;
+
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+    gap: clamp(0.5rem, 0.0714rem + 2.2857vw, 1.5rem);
+    
     list-style-type: none;
+    font-size: clamp(0.9rem, 0.6429rem + 1.3714vw, 1.5rem);
 }
+
+ 
