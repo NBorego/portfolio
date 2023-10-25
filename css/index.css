@@ -9,7 +9,9 @@
 @import "./header/social-media.css";
 @import "./header/scrolldown.css";
 /* About */
-@import "./main/about/ul-about.css";
+@import "./main/about.css";
+/* technologies */
+@import "./main/technologies.css";
 
 * {
     padding: 0;

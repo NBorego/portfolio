@@ -1,0 +1,50 @@
+.technologies div {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(2rem, 0.7143rem + 6.8571vw, 5rem);
+}
+
+.technologies ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+
+    list-style-type: none;
+    gap: clamp(1rem, 0.1429rem + 4.5714vw, 3rem);
+}
+
+.technologies ul li {
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.technologies ul li:hover {
+    transform: scale(110%);
+}
+
+
+.technologies img {
+    width: clamp(5rem, 2.8571rem + 11.4286vw, 10rem);
+}
+
+@media (max-width: 450px) {
+    .technologies ul {
+        display: flex;
+
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-height: 380px) {
+    .technologies ul {
+        display: flex;
+    }
+
+    .technologies img {
+        width: clamp(3rem, 2.2857rem + 11.4286vh, 5rem);
+
+        gap: 1rem;
+    }
+}
+
