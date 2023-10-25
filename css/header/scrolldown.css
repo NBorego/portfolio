@@ -31,3 +31,15 @@
         transform: translateY(.1rem);
     }
 }
+
+@media screen and (max-height: 380px) {
+    .scrolldown {
+        margin-bottom: .5rem;
+
+        font-size: clamp(0.5rem, 0.3929rem + 1.7143vh, 0.8rem);
+    }
+
+    .scrolldown img {
+        width: clamp(1rem, 0.9286rem + 1.1429vh, 1.2rem);
+    }
+}

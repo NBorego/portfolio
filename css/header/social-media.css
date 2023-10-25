@@ -19,3 +19,9 @@
 .social-media-links:hover {
     transform: scale(125%);
 }
+
+@media screen and (max-height: 380px) {
+    .social-media-links img {
+        width: clamp(1rem, 0.8214rem + 2.8571vh, 1.5rem);
+    }
+}

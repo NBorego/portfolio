@@ -44,3 +44,17 @@
 .hello-span {
     margin-right: clamp(0.5rem, 0.2857rem + 1.1429vw, 1rem);
 }
+
+@media screen and (max-height: 380px) {
+    .presentation {
+        line-height: clamp(2.5rem, 1.9643rem + 8.5714vh, 4rem);
+    }
+
+    .presentation .dev-strong {
+        font-size: clamp(2rem, 1.6429rem + 5.7143vh, 3rem);
+    }
+
+    .presentation .hello-span {
+        font-size: clamp(0.8rem, 0.55rem + 4vh, 1.5rem);
+    }
+}
