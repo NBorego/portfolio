@@ -1,0 +1,41 @@
+.my-projects .sec-projects > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.sec-projects > h1 {
+    margin-bottom: 1rem;
+}
+
+.Projects {
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.Projects div {
+    width: clamp(6rem, 1.2rem + 25.6vw, 30rem);
+    height: clamp(6rem, 1.2rem + 25.6vw, 30rem);
+
+    background-color: var(--gray);
+    border-radius: 1rem;
+}
+
+.Projects div img {
+    width: clamp(1.5rem, -0.2rem + 9.0667vw, 10rem);
+}
+
+.Projects h1{
+    font-size: clamp(1rem, 0.1429rem + 4.5714vw, 3rem);
+}
+
+@media (max-width: 450px) {
+    .my-projects .sec-projects div {
+        display: flex;
+
+        flex-direction: column;
+    }
+}

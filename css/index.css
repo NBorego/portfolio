@@ -12,6 +12,7 @@
 @import "./main/about.css";
 /* technologies */
 @import "./main/technologies.css";
+@import "./main/my-projects.css";
 
 * {
     padding: 0;
