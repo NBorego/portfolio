@@ -1,7 +1,11 @@
 .technologies div {
     display: flex;
     flex-direction: column;
-    gap: clamp(2rem, 0.7143rem + 6.8571vw, 5rem);
+    gap: clamp(1rem, 0.1429rem + 4.5714vw, 3rem);
+}
+
+.technologies h2 {
+    font-size: clamp(1.2rem, 0.8571rem + 1.8286vw, 2rem);
 }
 
 .technologies ul {
@@ -11,34 +15,87 @@
     justify-content: center;
 
     list-style-type: none;
-    gap: clamp(1rem, 0.1429rem + 4.5714vw, 3rem);
+    gap: clamp(2.5rem, 2.2857rem + 1.1429vw, 3rem);
 }
 
 .technologies ul li {
-    transition: all .3s ease-in-out;
-    cursor: pointer;
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 
-.technologies ul li:hover {
-    transform: scale(110%);
-}
+    position: relative;
 
+    gap: 1rem;
+
+    transition: all 0.3s ease-in-out;
+}
 
 .technologies img {
     width: clamp(5rem, 2.8571rem + 11.4286vw, 10rem);
 }
 
+.technologies .name-tec {
+    display: none;
+
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.technologies .name-tec {
+    display: none;
+
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: -2rem;
+}
+
 @media (max-width: 450px) {
+    .technologies h2 {
+        display: none;
+    }
+
     .technologies ul {
         display: flex;
 
         flex-direction: column;
     }
+
+    .technologies .name-tec {
+        display: inline-block;
+
+        position: static;
+    }
+}
+
+@media (min-width: 450px)  and (min-height: 380px){
+    .technologies ul li:hover .name-tec {
+        display: inline-block;
+
+        animation: appearElement 1s ease;
+    }
+
+    @keyframes appearElement {
+        0% {
+            transform: translateY(-1rem);
+            opacity: 10%;
+        }
+
+        100% {
+            transform: translateY(0rem);
+            opacity: 100%;
+        }
+    }
 }
 
 @media screen and (max-height: 380px) {
+    .technologies h2 {
+        display: none;
+    }
+
     .technologies ul {
-        display: flex;
+        gap: 1rem;
     }
 
     .technologies img {
@@ -46,5 +103,10 @@
 
         gap: 1rem;
     }
-}
 
+    .technologies .name-tec {
+        display: inline-block;
+
+        position: static;
+    }
+}
