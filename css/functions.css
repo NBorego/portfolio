@@ -30,6 +30,13 @@
     font-size: clamp(1.5rem, 0rem + 8vw, 5rem);
 }
 
+.footer {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+}
+
 @media (min-width: 768px) {
     .container {
         justify-content: flex-start;

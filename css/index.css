@@ -10,9 +10,11 @@
 @import "./header/scrolldown.css";
 /* About */
 @import "./main/about.css";
-/* technologies */
+/* Technologies */
 @import "./main/technologies.css";
 @import "./main/my-projects.css";
+/* Footer */
+@import "./footer/contacts.css";
 
 * {
     padding: 0;
