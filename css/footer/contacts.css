@@ -1,10 +1,10 @@
 .contacts-footer {
-    gap:1rem;
+    gap: 1rem;
 }
 
 .tittle-footer {
     font-size: clamp(1rem, 0.8714rem + 0.6857vw, 1.3rem);
-    letter-spacing: .1rem;
+    letter-spacing: 0.1rem;
 }
 
 .links-footer {
@@ -15,7 +15,7 @@
     text-decoration: none;
     color: var(--neon-blue);
     font-weight: bold;
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .links-footer img {

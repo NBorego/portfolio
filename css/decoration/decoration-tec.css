@@ -1,0 +1,64 @@
+@media (min-width: 1300px) and (min-height: 780px) {
+    .decoration-square {
+        background-color: var(--neon-blue);
+    }
+
+    .square-1 {
+        width: 5rem;
+        height: 5rem;
+
+        position: absolute;
+        z-index: 100;
+
+        top: 40%;
+        left: 70%;
+
+        animation: square-right 5s infinite alternate ease-in-out;
+    }
+
+    .square-2 {
+        width: 15rem;
+        height: 15rem;
+
+        position: absolute;
+        z-index: 100;
+
+        top: 60%;
+        left: 79%;
+
+        animation: square-left 20s infinite;
+    }
+
+    .square-3 {
+        width: 10rem;
+        height: 10rem;
+
+        position: absolute;
+        z-index: 100;
+
+        top: 15%;
+        left: 85%;
+
+        animation: square-right 10s infinite;
+    }
+}
+
+@keyframes square-right {
+    50% {
+        transform: rotate(-90deg);
+    }
+
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes square-left {
+    50% {
+        transform: rotate(90deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}

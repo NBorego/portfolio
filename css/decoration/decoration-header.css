@@ -1,0 +1,59 @@
+.decoration-ball {
+    transition: all 0.5s ease-in-out;
+}
+
+@media (min-width: 1300px) and (min-height: 780px) {
+    .decoration-ball {
+        border-radius: 50%;
+        background-color: var(--neon-blue);
+    }
+
+    .ball-1 {
+        width: 5rem;
+        height: 5rem;
+
+        position: absolute;
+        z-index: 100;
+
+        top: 40%;
+        left: 70%;
+
+        animation: ball 5s infinite alternate ease-in-out;
+    }
+
+    .ball-2 {
+        width: 15rem;
+        height: 15rem;
+
+        position: absolute;
+        z-index: 100;
+
+        top: 60%;
+        left: 79%;
+
+        animation: ball 20s infinite alternate ease-in-out;
+    }
+
+    .ball-3 {
+        width: 10rem;
+        height: 10rem;
+
+        position: absolute;
+        z-index: 100;
+
+        top: 15%;
+        left: 85%;
+
+        animation: ball 20s infinite alternate ease-in-out;
+    }
+}
+
+@keyframes ball {
+    0% {
+        transform: scale(70%);
+    }
+
+    100% {
+        transform: scale(110%);
+    }
+}

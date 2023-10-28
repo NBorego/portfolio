@@ -1,4 +1,4 @@
-.my-projects .sec-projects > div {
+.sec-projects > div {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
@@ -8,15 +8,15 @@
 }
 
 .sec-projects > h1 {
-    margin-bottom: 1rem;
+    margin-bottom: clamp(1rem, -0.7143rem + 9.1429vw, 5rem);
 }
 
-.Projects {
+.projects {
     flex-direction: column;
     gap: 1rem;
 }
 
-.Projects div {
+.projects div {
     width: clamp(6rem, 1.2rem + 25.6vw, 30rem);
     height: clamp(6rem, 1.2rem + 25.6vw, 30rem);
 
@@ -24,18 +24,41 @@
     border-radius: 1rem;
 }
 
-.Projects div img {
+.projects div img {
     width: clamp(1.5rem, -0.2rem + 9.0667vw, 10rem);
 }
 
-.Projects h1{
+.projects h1 {
     font-size: clamp(1rem, 0.1429rem + 4.5714vw, 3rem);
 }
 
-@media (max-width: 450px) {
-    .my-projects .sec-projects div {
-        display: flex;
 
+@media (max-width: 450px) {
+    .sec-projects > div {
+        display: flex;
         flex-direction: column;
+    }
+}
+
+@media (max-height: 450px) {
+    .my-projects {
+        margin-top: 3rem;
+    }
+
+    .sec-projects > h1 {
+        margin-bottom: 1rem;
+    }
+
+    .projects div {
+        width: clamp(6rem, 1.9732rem + 21.4765vh, 8rem);
+        height: clamp(6rem, 1.9732rem + 21.4765vh, 8rem);
+    }
+
+    .projects div img {
+        width: 1.5rem;
+    }
+
+    .projects h1 {
+        font-size: 1rem;
     }
 }

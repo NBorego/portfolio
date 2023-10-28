@@ -1,10 +1,27 @@
+nav {
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid var(--gray);
+
+    width: 100vw;
+
+    z-index: 200;
+    position: fixed;
+
+    backdrop-filter: blur(0.5rem);
+}
+
 header {
     font-family: var(--Anton);
     position: relative;
 }
 
 .about{
+    position: relative;
     gap: clamp(1rem, 0.3571rem + 3.4286vw, 2.5rem);
+}
+
+.technologies {
+    position: relative;
 }
 
 footer {
@@ -14,6 +31,14 @@ footer {
 
     background-color: var(--gray);
     padding: clamp(1rem, 0.5714rem + 2.2857vw, 2rem);
+}
+
+@media (min-width: 768px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        padding-inline: 3rem;
+    }
 }
 
 @media (min-width: 400px) {

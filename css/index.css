@@ -4,6 +4,8 @@
 @import "./scrollbar.css";
 /* Containers */
 @import "./containers.css";
+/* Nav */
+@import "./nav/nav.css";
 /* Header */
 @import "./header/presentation.css";
 @import "./header/social-media.css";
@@ -15,6 +17,10 @@
 @import "./main/my-projects.css";
 /* Footer */
 @import "./footer/contacts.css";
+/* Decoration */
+@import "./decoration/decoration-header.css";
+@import "./decoration/decoration-about.css";
+@import "./decoration/decoration-tec.css";
 
 * {
     padding: 0;
