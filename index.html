@@ -15,6 +15,8 @@
     <script src="./src/nav.js" defer></script>
     <script src="./src/scrolldown.js" defer></script>
     <script src="./src/dark-mode.js" defer></script>
+    <script src="./src/copy.js" defer></script>
+    <script src="./src/navigation.js" defer></script>
     <!-- Tittle -->
     <title>Nicolas</title>
 </head>
@@ -28,11 +30,11 @@
         </div>
 
         <ul class="nav-links">
-            <li><a href="#" class="link-navigation">Home</a></li>
-            <li><a href="#" class="link-navigation">Sobre</a></li>
-            <li><a href="#" class="link-navigation">Tecnologias</a></li>
-            <li><a href="#" class="link-navigation">Projetos</a></li>
-            <li><a href="#" class="link-navigation">Contatos</a></li>
+            <li id="home" class="link-navigation">Home</li>
+            <li id="sobre" class="link-navigation">Sobre</li>
+            <li id="tecnologias" class="link-navigation">Tecnologias</li>
+            <li id="projetos" class="link-navigation">Projetos</li>
+            <li id="contatos" class="link-navigation">Contatos</li>
             <li class="switch-button"> 
                 <span class="switch-icon">
                     <img id="switch-img" src="./assets/sun.svg" alt="Icone">
@@ -164,9 +166,11 @@
                 <img src="./assets/linkedin.svg" alt="My linked-in">Linkedin
             </a>
 
-            <strong class="flex-center links-footer">
-                <img src="./assets/mail.svg" alt="Meu e-mail">n.s.borego@gmail.com
+            <strong class="flex-center links-contacts links-footer e-mail">
+                <img src="./assets/mail.svg" alt="Meu e-mail">
+                <span id="email-copy">n.s.borego@gmail.com</span>
             </strong>
+            <span class="alert-copy">Copiado</span>
         </section>
 
         <section class="curriculum footer">

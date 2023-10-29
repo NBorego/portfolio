@@ -45,6 +45,8 @@ nav div {
 }
 
 .link-navigation {
+    cursor: pointer;
+    
     position: relative;
     color: var(--slate);
     text-decoration: none;

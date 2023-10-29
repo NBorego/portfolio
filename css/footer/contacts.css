@@ -25,3 +25,37 @@
 .links-contacts:hover {
     color: var(--slate);
 }
+
+.e-mail {
+    cursor: pointer;
+}
+
+.alert-copy {
+    display: none;
+
+    position: fixed;
+
+    bottom: -3rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+    backdrop-filter: blur(0.5rem);
+    border: 0.1rem solid var(--neon-blue);
+    padding: 0.5rem;
+    border-radius: 2rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    font-size: 1.2rem;
+
+    animation: showElement 7s;
+}
+
+@keyframes showElement {
+    20%, 70% {
+        bottom: 1rem;
+    }
+
+    100% {
+        bottom: -5rem;
+    }
+}

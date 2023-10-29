@@ -4,16 +4,22 @@ const switchIconImage = document.querySelector('#switch-img');
 const body = document.querySelector('body');
 const root = document.documentElement;
 
+var theme = 'light';
+
 switchButton.addEventListener('click', () => {
-    if (switchButton.style.justifyContent === 'flex-start') {
+    // if (switchButton.style.justifyContent === 'flex-start')
+    if (theme === 'light') {
+        theme = 'dark';
+
         switchIconImage.src = '../assets/moon.svg';
         switchButton.style.justifyContent = 'flex-end';
 
         root.style.setProperty('--gray', '#1E293B');
         root.style.setProperty('--slate', '#fff');
         root.style.setProperty('--white', '#0f172a');
-
     } else {
+        theme = 'light';
+
         switchIconImage.src = '../assets/sun.svg';
         switchButton.style.justifyContent = 'flex-start';
 
