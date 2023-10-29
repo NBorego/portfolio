@@ -1,5 +1,7 @@
 @import "./variables.css";
 @import "./functions.css";
+/* Dark Mode */
+@import "./dark-mode.css";
 /* Scrollbar */
 @import "./scrollbar.css";
 /* Containers */
@@ -31,4 +33,5 @@
 html, body {
     font-family: var(--Inter);
     color: var(--slate);
+    background-color: var(--white);
 }

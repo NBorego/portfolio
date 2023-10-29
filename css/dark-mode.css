@@ -1,0 +1,27 @@
+.switch-button {
+    display: flex;
+
+    background-color: var(--gray);
+    width: 3rem;
+    padding: 0.2rem;
+    border-radius: 1rem;
+
+    cursor: pointer;
+}
+
+.switch-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--neon-blue);
+    width: 1rem;
+    height: 1rem;
+    padding: 0.1rem;
+
+    border-radius: 50%;
+}
+
+.switch-icon img {
+    width: 1rem;
+}
