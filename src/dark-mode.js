@@ -15,6 +15,7 @@ switchButton.addEventListener('click', () => {
         switchButton.style.justifyContent = 'flex-end';
 
         root.style.setProperty('--gray', '#1E293B');
+        root.style.setProperty('--very-gray', '#334155');
         root.style.setProperty('--slate', '#fff');
         root.style.setProperty('--white', '#0f172a');
     } else {
@@ -23,6 +24,7 @@ switchButton.addEventListener('click', () => {
         switchIconImage.src = '../assets/sun.svg';
         switchButton.style.justifyContent = 'flex-start';
 
+        root.style.setProperty('--very-gray', '#9ca3af');
         root.style.setProperty('--gray', '#E5E7EB');
         root.style.setProperty('--slate', '#0f172a');
         root.style.setProperty('--white', '#fff');
