@@ -1,19 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;700&display=swap");
 
 :root {
-    /* Fonts */
-    --Inter: 'Inter', sans-serif;
-    --Anton: 'Anton', sans-serif;
+  /* Fonts */
+  --Inter: "Inter", sans-serif;
+  --Anton: "Anton", sans-serif;
 
-    /* Colors */
-    --neon-blue: #4361EE;
-    --very-blue: #3F37C9; 
-    --sky-blue: #4CC9F0;
-    /* Blur */
-    /* Neutral Colors */
-    --white: #fff;
-    --gray: #e5e7eb;
-    --very-gray: #9ca3af;
-    --slate: #0f172a;
-    --slate-2: #1E293B;
+  /* Colors */
+  --neon-blue: #4361ee;
+  --very-blue: #3f37c9;
+  --sky-blue: #4cc9f0;
+  /* Neutral Colors */
+  --white: #fff;
+  --gray: #e5e7eb;
+  --very-gray: #9ca3af;
+  --slate: #0f172a;
+  --slate-2: #1e293b;
 }
