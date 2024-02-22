@@ -40,6 +40,7 @@
 
 html,
 body {
+  scroll-behavior: smooth;
   font-family: var(--Inter);
   color: var(--slate);
   background-color: var(--white);

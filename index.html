@@ -19,7 +19,6 @@
     <script src="./src/scrolldown.js" defer></script>
     <script src="./src/dark-mode.js" defer></script>
     <script src="./src/copy.js" defer></script>
-    <script src="./src/navigation.js" defer></script>
     <!-- Tittle -->
     <title>Nicolas</title>
 </head>
@@ -35,11 +34,10 @@
         </div>
 
         <ul class="nav-links">
-            <li id="home" class="link-navigation">Home</li>
-            <li id="sobre" class="link-navigation">Sobre</li>
-            <li id="tecnologias" class="link-navigation">Tecnologias</li>
-            <li id="projetos" class="link-navigation">Projetos</li>
-            <li id="contatos" class="link-navigation">Contatos</li>
+            <li class="link-navigation"><a href="#home">Home</a></li>
+            <li class="link-navigation"><a href="#sobre">Sobre</a></li>
+            <li class="link-navigation"><a href="#projetos">Projetos</a></li>
+            <li class="link-navigation"><a href="#contatos">Contatos</a></li>
             <li class="switch-button">
                 <span class="switch-icon">
                     <img id="switch-img" src="./assets/sun.svg" alt="Icone">
@@ -47,7 +45,7 @@
             </li>
         </ul>
     </nav>
-    <header class="flex-center container">
+    <header id="home" class="flex-center container">
         <div class="decoration-ball ball-1"></div>
 
         <h1 class="presentation">
@@ -81,7 +79,7 @@
         <div class="decoration-ball ball-3"></div>
     </header>
     <main>
-        <article class="about container-col">
+        <article id="sobre" class="about container-col">
             <img src="./assets/cross.svg" alt="imagem de um X" class="decoration-cross cross-1">
 
             <h1 class="tittle">Sobre Mim</h1>
@@ -131,7 +129,7 @@
             <div class="decoration-square square-2"></div>
             <div class="decoration-square square-3"></div>
         </section>
-        <section class="my-projects container flex-center">
+        <section id="projetos" class="my-projects container flex-center">
             <div class="sec-projects">
                 <h1 class="tittle">Projetos</h1>
 
@@ -161,7 +159,7 @@
         </section>
     </main>
     <footer>
-        <section class="contacts footer">
+        <section id="contatos" class="contacts footer">
             <h1 class="tittle-footer">Contato</h1>
 
             <a href="https://github.com/NBorego" class="flex-center links-contacts links-footer" target="_blank">
